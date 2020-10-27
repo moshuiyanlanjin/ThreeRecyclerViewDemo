@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="35dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+        <RelativeLayout
+            android:id="@+id/rela"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            >
+            <View
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:background="#111"
+                />
+
+            <View
+                android:id="@+id/viewone"
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="17dp"
+                android:background="#111"
+                />
+            <View
+                android:layout_width="16dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="18dp"
+                android:background="#111"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/itemGroupNameTv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="视频"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/itemRightImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_more_right_gray" />
+    </LinearLayout>
+</LinearLayout>
